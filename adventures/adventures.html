@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventures | QTripDynamic</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="adventures.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">QTrip</a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav w-100 justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Reservations</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Adventures List Section -->
+    <div class="container my-4">
+        <h2>Explore all adventures</h2>
+        <p>Here's a list of places that you can explore in the city</p>
+        <div class="filters">
+            <label>Filters:</label>
+            <select id="durationFilter" class="form-control">
+                <option value="">Filter by Duration (Hours)</option>
+                <option value="0-2">0-2 Hours</option>
+                <option value="2-6">2-6 Hours</option>
+                <option value="6-12">6-12 Hours</option>
+                <option value="12-19">12+ Hours</option>
+            </select>
+            <select id="categoryFilter" class="form-control ml-2">
+                <option value="">Add Category</option>
+                <option value="Party">Party</option>
+                <option value="Cycling">Cycling</option>
+                <option value="Beaches">Beaches</option>
+                <option value="Hillside">Hillside</option>
+            </select>
+            <button id="clearFilters" class="btn btn-secondary ml-2">Clear</button>
+        </div>
+        <div class="row adventures-grid" id="adventures"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="adventures.js"></script>
+</body>
+</html>

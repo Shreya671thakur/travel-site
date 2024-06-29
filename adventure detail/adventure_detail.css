@@ -1,0 +1,31 @@
+/* adventure_detail.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#adventure-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#adventure-subtitle {
+    font-size: 1.25rem;
+    color: #777;
+}
+
+#reservation-form {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#reservation-form .form-group p {
+    font-size: 1.25rem;
+    margin: 0;
+}
+.carousel-inner img {
+    height: 400px; 
+    object-fit: cover;
+}
